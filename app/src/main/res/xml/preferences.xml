@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <PreferenceCategory android:title="@string/pref_cat_benutzer">
+        <EditTextPreference
+            android:title="@string/preference_name_title"
+            android:key="@string/preference_name_key"
+            android:inputType="textMultiLine"
+            android:defaultValue="@string/preference_name_default"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_cat_spiel">
+        <SwitchPreference
+            android:title="@string/preference_switchbox_title"
+            android:defaultValue="true"/>
+
+        <ListPreference
+            android:title="@string/preference_list_title"
+            android:entries="@array/listentries"
+            android:entryValues="@array/listentryValues"
+            android:defaultValue="4"/>
+
+        <ListPreference
+            android:key="@string/preference_figurlist_key"
+            android:title="@string/preference_art_title"
+            android:entries="@array/artlistentries"
+            android:entryValues="@array/artlistentryValues"
+            android:defaultValue="1"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

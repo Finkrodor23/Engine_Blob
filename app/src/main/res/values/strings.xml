@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Blob_Engine</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">BLOB\nENGINE</string>
+    <string name="title_activity_blob">BlobActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="einstellungen_geoeffnet">Einstellungen geöffnet!</string>
+
+    <string name="pref_cat_benutzer">Benutzereinstellungen:</string>
+    <string name="pref_cat_spiel">Spieleinstellungen:</string>
+
+    <!-- Strings für preference.xml-->
+    <string name="preference_name_title">Namen eintragen</string>
+    <string name="preference_name_key">name</string>
+    <string name="preference_name_default">JoHan Solo</string>
+    <string name="preference_switchbox_title">Profi-Modus</string>
+    <string name="preference_list_title">Farbe wählen</string>
+    <string name="preference_art_title">Figur wählen</string>
+    <string name="preference_figurlist_key">figurliste</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_einstellungen">Einstellungen</string>
+</resources>
