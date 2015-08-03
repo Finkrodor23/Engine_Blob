@@ -17,7 +17,7 @@ public class Triangle extends Shape {
         return verticles;
     }
 
-    private float verticles[] = {
+    public float verticles[] = {
              -0.3f,  0.0f, 0.0f,
               0.3f,  0.0f, 0.0f,
               0.0f,  0.3f, 0.0f
@@ -94,22 +94,16 @@ public class Triangle extends Shape {
 
     public void setValues( float x2, float y2){
         //Check if triangle is out of x Bounds
-        if(verticles[0] - x2 > -1f && verticles[0] - x2 < 1f
-        && verticles[3] - x2 > -1f && verticles[3] - x2 < 1f
-        && verticles[6] - x2 > -1f && verticles[6] - x2 < 1f) {
             verticles[0] -= x2;
             verticles[3] -= x2;
             verticles[6] -= x2;
-        }
+
 
         //Check if triangle is out of y Bounds
-        if(verticles[1] - y2 > -1f && verticles[1] - y2 < 1f
-        && verticles[4] - y2 > -1f && verticles[4] - y2 < 1f
-        && verticles[7] - y2 > -1f && verticles[7] - y2 < 1f) {
             verticles[1] -= y2;
             verticles[4] -= y2;
             verticles[7] -= y2;
-        }
+
         //verticles[5] += y2;
 
 

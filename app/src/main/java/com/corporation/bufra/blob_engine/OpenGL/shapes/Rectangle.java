@@ -28,5 +28,12 @@ public class Rectangle extends Shape {
     public void setValues( float x2, float y2){
         upperleft.setValues(x2, y2);
         downerright.setValues(x2, y2);
+        verticles[0] -= x2;
+        verticles[1] -= y2;
+
+        verticles[3] -= x2;
+        verticles[4] -= y2;
+
+
     }
 }

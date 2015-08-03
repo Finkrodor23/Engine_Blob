@@ -18,16 +18,17 @@ public class MainFigure extends Rectangle {
         super();
     }
 
-    public MainFigure(float x1, float x2, float x3, float x4) {
-        super(x1, x2, x3, x4);
+    public MainFigure(float x1, float x2, float y1, float y2) {
+        super(x1, x2, y1, y2);
     }
 
     public void setValues( Rectangle[] rec, float x2, float y2) {
         //CollisionArray = CollisionDetector(rec, x2, y2);
-        if(!(verticles[0] - x2 < -1 || verticles[3] - x2 < -1)) {super.setValues(x2, 0);}
-        if(!(verticles[0] - x2 > 1 || verticles[3] - x2 > 1)) {super.setValues(0, y2);}
-        if(!(verticles[1] - y2 < -1 || verticles[4] - y2 < -1 )) {super.setValues(x2, 0);}
-        if(!(verticles[1] - y2 > 1 || verticles[4] - y2 > 1)) {super.setValues(0, y2);}
+        if(!(x2>0/*verticles[0] - x2 < -1 || verticles[3] - x2 < -1)*/ )) {super.setValues(x2, 0);}  //Movement Right
+        if(!(x2<0/*verticles[1] - y2 < -1 || verticles[4] - y2 < -1 )*/ )) {super.setValues(x2, 0);} //Movement Left
+
+        if(!(y2>0/*verticles[0] - x2 > 1 || verticles[3] - x2 > 1*/) ) {super.setValues(0, y2);}       //Movement Down
+        if(!(y2<0/*verticles[1] - y2 > 1 || verticles[4] - y2 > 1)*/  )) {super.setValues(0, y2);}      //Movement Up
     }
 
     public boolean[] CollisionDetector(Rectangle[] rec, float x2, float y2) {
